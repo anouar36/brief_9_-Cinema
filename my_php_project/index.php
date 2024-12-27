@@ -1,25 +1,16 @@
 <?php
-require_once 'db.php';
+CLASS anouar {
+    public $name;
+    public $email;
 
-echo "anouar charai"
-class member {
-    // Properties
-    private $name ;
-    private $email;
-    private $password;
-
-    // Methods
-    function set_name($name) {
-        $this->name = $name;
-      }
-      function set_name($email) {
-        $this->email = $email;
-      }
-      function set_name($name) {
-        $this->password = $password;
-      }
+    public function __constauct($na, $em) {
+        $this->name = $na;
+        $this->email = $em; 
+    }
 }
-
-
+$user1 = new anouar("anouar", "anouaharai@gmail.com");
+echo '<pre>';
+print_r($user1);
+echo '</pre>';
 
 ?>
